@@ -1,0 +1,40 @@
+:root {
+    --black: #212121;
+    --blue: #2A2AFB;
+    --gray: #878787;
+    --white: #FFF;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New';
+    color: var(--white);
+}
+
+html {
+    background: linear-gradient(45deg, var(--gray), var(--blue));
+    height: 100vh;
+}
+
+.title {
+    text-align: center;
+}
+
+.container {
+    border: 1px solid var(--gray);
+    margin: 0 auto;
+    width: 60vw;
+}
+
+.game {
+    background: var(--black);
+    height: 60vh;
+    width: 100%;
+}
+
+.game__objective {
+    background: var(--white);
+    height: 2vh;
+    position: absolute;
+    width: 2vw;
+}
