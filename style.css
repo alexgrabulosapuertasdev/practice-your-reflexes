@@ -46,3 +46,15 @@ html {
     position: absolute;
     width: 2vw;
 }
+
+.btn-start {
+    background: var(--light-blue);
+    border: none;
+    border-radius: 25px;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px auto;
+    padding: 8px 24px;
+    width: 150px;
+}

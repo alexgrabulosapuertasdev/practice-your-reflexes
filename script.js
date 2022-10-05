@@ -1,6 +1,7 @@
 const objective = document.getElementById('objective');
-objective.addEventListener('click', upScore);
 const score = document.getElementById('score');
+const start = document.getElementById('start');
+start.addEventListener('click', startGame);
 const time = document.getElementById('time');
 
 const HEIGHT_CONTAINER = 60;
@@ -13,7 +14,7 @@ const MAX_SCORE = 60;
 
 const LIMIT_TIME = 0;
 
-const intervalDownTime = setInterval(downTime, 1000);
+let intervalDownTime;
 
 function downTime() {
     const currentTime = Number(time.innerText) - 1;
@@ -34,6 +35,11 @@ function gameOver() {
 function move() {
     objective.style.marginLeft = Math.random() * (WIDTH_CONTAINER - WIDTH_PLAYER) + 'vw';
     objective.style.marginTop = Math.random() * (HEIGHT_CONTAINER - HEIGHT_PLAYER) + 'vh';
+}
+
+function startGame() {
+    objective.addEventListener('click', upScore);
+    intervalDownTime = setInterval(downTime, 1000);
 }
 
 function upScore() {
