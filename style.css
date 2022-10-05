@@ -2,6 +2,7 @@
     --black: #212121;
     --blue: #2A2AFB;
     --gray: #878787;
+    --light-blue: #4FA8FB;
     --white: #FFF;
 }
 
@@ -24,6 +25,13 @@ html {
     border: 1px solid var(--gray);
     margin: 0 auto;
     width: 60vw;
+}
+
+.nav {
+    background: var(--light-blue);
+    display: flex;
+    font-weight: bold;;
+    justify-content: space-evenly;
 }
 
 .game {
