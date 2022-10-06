@@ -2,7 +2,9 @@
     --black: #212121;
     --blue: #2A2AFB;
     --gray: #878787;
+    --green: #3AFB91;
     --light-blue: #4FA8FB;
+    --red: #CA1223;
     --white: #FFF;
 }
 
@@ -57,4 +59,22 @@ html {
     margin: 15px auto;
     padding: 8px 24px;
     width: 150px;
+}
+
+.text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text--win {
+    color: var(--green);
+}
+
+.text--lose {
+    color: var(--red);
+}
+
+.disabled {
+    display: none;
 }
